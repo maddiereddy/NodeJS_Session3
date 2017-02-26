@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment1</title>
+    <script type="text/javascript">
+        //Creating an object Car using a constructor function with (make, model, year) as parameters
+        function Car(make, model, year){
+            this.make = make;
+            this.model = model;
+            this.year = year;       //using `this.` makes the properies of the Car object public
+                                    // and accessible from outside the object
+        }
+
+        //creating two objects of type Car
+        var carOne = new Car("Acura","MDX", "2010");
+        var carTwo = new Car("Audi","A8", "2016");
+
+        //printing out properties for carOne object
+        alert("Make: " + carOne.make + ", Model: " + carOne.model + ", Year: " + carOne.year);
+
+        //printing out properties for carTwo object
+        alert("Make: " + carTwo.make + ", Model: " + carTwo.model + ", Year: " + carTwo.year);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

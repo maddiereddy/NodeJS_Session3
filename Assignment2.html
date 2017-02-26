@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment2</title>
+    <script type="text/javascript">
+        function MathOperations(){
+            this.num1 = 0;  //public properties
+            this.num2 = 0;
+
+            //4 public methods to perform math operations using the properties num1 and num2
+            this.Add = function(){
+                var num = 10;       //local variable; it is private i.e not accessible outside the function
+                alert(num+this.num1+this.num2 + " - Addition of 10+num1+num2");
+            }
+            this.Subtract = function(){
+                var num = 100;
+                alert(num-this.num1-this.num2 + " - Subtraction of 100-num1-num2");
+            }
+            this.Multiply = function(){
+                var num = 10;
+                alert(num*this.num1*this.num2 + " - Multiplication of 10*num1*num2");
+            }
+            this.Divide = function(){
+                var num = 100;
+                alert(num/this.num1/this.num2 + " - Division of 100/num1/num2");
+            }
+        }
+        var myMath = new MathOperations();
+        myMath.num1 = 10;
+        myMath.num2 = 5;
+        myMath.Add();
+        myMath.Subtract();
+        myMath.Multiply();
+        myMath.Divide();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
